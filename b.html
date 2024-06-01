@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
+    <style>
+
+        :root{
+            --theme-color: #006840;         
+        }
+
+        * {
+            font-family: Montserrat;
+        }
+
+        header {
+            /* background-image: url("https://png.pngtree.com/background/20230516/original/pngtree-path-through-the-forest-wallpaper-picture-image_2615805.jpg"); */
+            /* background-image: linear-gradient(0deg, #ffc0c0, #b5ffb5, #ababff, #ffffc3); */
+            background-image: linear-gradient(0deg, #00000079, #0000007f), url("https://png.pngtree.com/background/20230516/original/pngtree-path-through-the-forest-wallpaper-picture-image_2615805.jpg");
+            height: 50vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header-title {
+            font-size: 50px;
+        }
+
+        .header-subtitle {
+            font-size: 20px;
+        }
+
+        .hero-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            margin-top: 10px;
+            transition-duration: 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: white;
+            color: green;
+        }
+
+        .section {
+            border: 2px solid red;
+            padding: 50px 200px;
+        }
+
+        .card-group {
+            /* border: 2px solid blue; */
+            display: flex;
+            gap: 30px;
+        }
+
+        .card{
+            /* border: 2px solid green; */
+            text-align: center;
+            padding: 50px;
+            border-radius: 10px;
+            color: var(--theme-color);
+            transition-duration: 0.3s;
+        }
+
+        .card:hover{
+            color: white;
+            background-color: var(--theme-color);
+        }
+
+        .section-title{
+            text-align: center;
+            font-size: 40px;
+            color: var(--theme-color);
+        }
+
+        .footer-container{
+            padding: 50px 200px;
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .footer-description{
+            /* border: 2px solid blue; */
+        }
+
+        .footer-links-group{
+            /* border: 2px solid green; */
+        }
+
+        .footer-link{
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: var(--theme-color);
+            color: white;
+        }
+
+        
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-title">Title of the Website</h1>
+        <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae id rem
+            placeat in nemo quia officia eveniet sint dolores?</p>
+        <button class="hero-btn">Get Started</button>
+    </header>
+
+    <main>
+        <section class="section feature-section">
+            <h1 class="section-title">Features Section</h1>
+            <div class="card-group">
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-6x"></i>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, minima aspernatur iure ut nisi
+                        nesciunt hic perferendis obcaecati sit, ipsum quas numquam modi fugiat ex unde, laudantium
+                        expedita corrupti illo!</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-6x"></i>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, minima aspernatur iure ut nisi
+                        nesciunt hic perferendis obcaecati sit, ipsum quas numquam modi fugiat ex unde, laudantium
+                        expedita corrupti illo!</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-6x"></i>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, minima aspernatur iure ut nisi
+                        nesciunt hic perferendis obcaecati sit, ipsum quas numquam modi fugiat ex unde, laudantium
+                        expedita corrupti illo!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-description">
+                <h2>Company Name</h2>
+                <p>&copy; 2024</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, voluptate!</p>
+                <a href=""></a>
+            </div>
+
+            <div class="footer-links-group">
+                <a href="" class="footer-link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-github"></i> Github</a>
+            </div>
+
+            <div class="footer-links-group">
+                <a href="" class="footer-link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-github"></i> Github</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="logo-placeholder.png" alt="Foody" class="h-8 mr-3">
+                <span class="text-xl font-bold text-gray-800">Foody</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Pages</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Shop</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+                <button class="bg-red-500 text-white px-4 py-2 rounded">Log in</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Product Details Section -->
+    <div class="container mx-auto my-12 px-6">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-2xl font-bold text-gray-800">Product Details</h2>
+                    <div class="text-gray-600">
+                        <a href="#" class="hover:text-gray-800">Home</a> / Product Details
+                    </div>
+                </div>
+            </div>
+            
+            <div class="px-6 py-4">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2">
+                        <img src="product-image-placeholder.png" alt="Meat Vegetable" class="rounded-lg mb-4">
+                        <div class="grid grid-cols-3 gap-2">
+                            <img src="image1-placeholder.png" alt="Image 1" class="rounded-lg">
+                            <img src="image2-placeholder.png" alt="Image 2" class="rounded-lg">
+                            <img src="image3-placeholder.png" alt="Image 3" class="rounded-lg">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:ml-6">
+                        <h3 class="text-3xl font-bold text-gray-800">Meat Vegetable</h3>
+                        <div class="text-red-500 text-xl my-2">
+                            <span>$100.00</span>
+                            <span class="line-through text-gray-400">$150.00</span>
+                        </div>
+                        <div class="text-yellow-500 my-2">
+                            <span>★★★★★</span>
+                            <span class="text-gray-600">(1 Review)</span>
+                        </div>
+                        <p class="text-gray-600 my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="flex items-center my-4">
+                            <button class="bg-red-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                            <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded ml-4">Add to Wishlist</button>
+                            <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded ml-4">Compare</button>
+                        </div>
+                        <ul class="text-gray-600">
+                            <li><strong>Type:</strong> Organic</li>
+                            <li><strong>MFG:</strong> Aug 22, 2022</li>
+                            <li><strong>SKU:</strong> FW511TB</li>
+                            <li><strong>Tags:</strong> Organic, Brown, Vegetables</li>
+                            <li><strong>Stock:</strong> In Stock</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Related Products Section -->
+    <div class="container mx-auto my-12 px-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Related Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="related-product1-placeholder.png" alt="Related Product 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-800">Product Name</h3>
+                    <div class="text-red-500 text-xl my-2">$42.00</div>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="related-product2-placeholder.png" alt="Related Product 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-800">Product Name</h3>
+                    <div class="text-red-500 text-xl my-2">$50.00</div>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="related-product3-placeholder.png" alt="Related Product 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-800">Product Name</h3>
+                    <div class="text-red-500 text-xl my-2">$35.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 flex justify-between">
+            <div class="space-y-2">
+                <h3 class="text-lg font-bold">Useful Links</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Return Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-lg font-bold">Contact</h3>
+                <ul>
+                    <li><a href="tel:+123456789" class="hover:underline">+123456789</a></li>
+                    <li><a href="mailto:info@example.com" class="hover:underline">info@example.com</a></li>
+                    <li><a href="#" class="hover:underline">123 Example Street, New York, NY</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-6">&copy; 2024 Foody. All rights reserved.</div>
+    </footer>
+</body>
+</html>
