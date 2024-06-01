@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+@media screen and (min-width: 780px) {
+ .pizza{
+  width:  50px;
+  height: 50px;
+ }
+}
+
+  @media(min-width:400px){
+
+
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.pizza {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background-color: #f5deb3;
+  border-radius: 50%;
+  animation-duration: 2s;
+}
+
+
+.crust {
+  position: absolute;
+  width: 620px;
+  height: 600px;
+  background-color: #d2691e;
+  border-radius: 50%;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  
+  
+  
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.crust:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+.sauce {
+  position: absolute;
+ margin-top: 10px;
+  width: 580px;
+  height: 540px;
+  background-color: #721010;
+  border-radius: 50%;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%); 
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.sauce:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+.cheese {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom:340px;
+  left: 40%;
+  transform: translateX(-50%);
+  animation: move 5s infinite ease-in-out;
+   
+  animation: 3s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+
+
+.cheese2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 60px;
+  right: 80%;
+  top: 390px;
+  transform: translateX(-50%);
+   
+  animation: 4s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese2:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+
+.cheese3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 160px;
+  left: 25%;
+  transform: translateX(-50%);
+  animation: 5s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese3:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese4 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 500px;
+  left: 40%;
+  transform: translateX(-50%);
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese4:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese5 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 530px;
+  left: 65%;
+  transform: translateX(-50%);
+  animation: 7s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese5:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese6 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 330px;
+  right: 10%;
+  transform: translateX(-50%);
+  animation: 8s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese6:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese7 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 60px;
+  top: 180px;
+  left: 20%;
+  transform: translateX(-50%);
+  animation: 9s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese7.cheese {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese8 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 100px;
+  left: 40%;
+  transform: translateX(-50%);
+  animation: 10s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese8.cheese {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese9 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 60px;
+  top: 210px;
+  right: 15%;
+  transform: translateX(-50%);
+  animation: 11s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese9:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese10 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 200px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: 12s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese10.cheese {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.cheese11 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 20%;
+  bottom: 230px;
+  left: 45%;
+  transform: translateX(-50%);
+  animation: 13s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.cheese11:hover {
+  background-color: #d2691e;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.veg{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  left: 200px ;
+  background-color: #234d29;
+  bottom: 200px;
+  border-radius: 50%;
+  bottom: 150px;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.veg2{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  left: 540px ;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 270px;
+  
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg2:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.veg3{
+    position: absolute;
+  width: 70px;
+  margin-top: 120px;
+  height: 50px;
+  top: 90px ;
+  left: 450px;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 700px;
+  animation: 7s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.veg4{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  top: 140px ;
+  left: 260px;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 200px;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.veg5{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  top: 20px ;
+  right: 390px;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 200px;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.veg6{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  top: 260px ;
+  left: 100px;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 200px;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.veg7{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  top: 450px ;
+  right: 200px;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 400px;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.veg8{
+    position: absolute;
+  width: 70px;
+  margin-top: 80px;
+  height: 50px;
+  top: 290px ;
+  right: 250px;
+  background-color: #234d29;
+  border-radius: 50%;
+  bottom: 240px;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+.veg:hover {
+  background-color: #0d0b09;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  
+  
+}
+.pepperoni {
+  top: 60px;
+  left: 90px;
+}
+
+.mushroom {
+  top: 100px;
+  left: 70px;
+}
+.onion {
+    top: 250px;
+    left: 80px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .onion2 {
+    bottom: -260px;
+    left: 320px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .onion3 {
+    bottom: -330px;
+    left: 510px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .onion4 {
+    bottom: -120px;
+    left: 510px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  
+  .onion5 {
+    bottom: 100px;
+    left: 320px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .onion6 {
+    bottom: -300px;
+    left: 310px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .onion7 {
+    bottom: -150px;
+    left: 110px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .layer {
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .outer {
+    background-color: #a35679; /* White */
+  }
+  
+  .middle {
+    background-color: #8f4f4f; /* Light gray */
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .inner {
+    background-color: #a68484; /* Dark gray */
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+  }
+  .mom {
+    bottom: -350px;
+    left: 480px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .layer1{
+    background-color:#e31f0ab3; 
+    margin: -290px;
+    width: 100PX;
+    height: 90PX;
+    border-radius: 50%;
+  }
+  .layer2{
+    background-color:#e31f0ab3; 
+    width: 100PX;
+    height: 90PX;
+    border-radius: 50%;
+  }
+  .mom2 {
+    bottom: -360px;
+    left: 380px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+
+  .layer2{
+    background-color:#e31f0ab3; 
+    margin: -30px;
+    width: 100PX;
+    height: 90PX;
+    border-radius: 50%;
+  }
+  .mom3 {
+    bottom: -80px;
+    left: 370px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+
+  .layer3{
+    background-color:#e31f0ab3; 
+    margin: -30px;
+    width: 100PX;
+    height: 90PX;
+    border-radius: 50%;
+  }
+  .mom4{
+    bottom: -190px;
+    left: 480px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .layer4{
+    background-color:#e31f0ab3; 
+    margin: -30px;
+    width: 100PX;
+    height: 90PX;
+    border-radius: 50%;
+  }
+  .mom5{
+    bottom: -130px;
+    left: 190px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+  }
+  .layer5{
+    background-color:#e31f0ab3; 
+    margin: -30px;
+    width: 100PX;
+    height: 90PX;
+    border-radius: 50%;
+  }
+  .oregno{
+    width: 450PX;
+     height: 400PX;
+    
+     position: absolute;
+     left: 150px;
+     top: 150px;
+
+  }
+ 
+}
+
+</style>
+<body>
+    <div>
+    <h1 style="font-family: roboto; font-size: 130px; color: #f91905; margin-top: 350px; left: 25%;   position: absolute;">SPICY  PIZZA</h1>
+</div>
+<div class="pizza">
+  <div class="crust"></div>
+  <div class="sauce"></div>
+  <div class="cheese"></div>
+  <div class="cheese2"></div>
+  <div class="cheese3"></div>
+  <div class="cheese4"></div>
+  <div class="cheese5"></div>
+  <div class="cheese6"></div>
+  <div class="cheese7"></div>
+  <div class="cheese8"></div>
+  <div class="cheese9"></div>
+  <div class="cheese10"></div>
+  <div class="cheese11"></div>
+  <div class="veg"></div>
+  <div class="veg2"></div>
+  <div class="veg3"></div>
+  <div class="veg4"></div>
+  <div class="veg5"></div>
+  <div class="veg6"></div>
+  <div class="veg7"></div>
+  <div class="veg8"></div>
+  <div class="onion">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="onion2">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="onion3">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="onion4">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="onion5">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="onion6">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="onion7">
+    <div class="layer outer"></div>
+    <div class="layer middle"></div>
+    <div class="layer inner"></div>
+  </div>
+  <div class="mom">
+    
+    <div class="layer1"></div>
+  </div>
+  
+  <div class="mom2">
+    <div class="layer2"></div>
+  </div>
+
+  <div class="mom3">
+    <div class="layer3"></div>
+  </div>
+
+  <div class="mom4">
+    <div class="layer4"></div>
+  </div>
+
+  <div class="mom5">
+    <div class="layer5"></div>
+  </div>
+
+  
+</div>
+</body>
+</html>
